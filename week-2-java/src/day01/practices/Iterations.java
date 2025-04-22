@@ -1,6 +1,6 @@
-package day01;
+package day01.practices;
 
-public class Iteration {
+public class Iterations {
     public static void main(String[] args) {
         drawbox(5);
     }
@@ -8,9 +8,9 @@ public class Iteration {
     public static void drawbox(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-
+                System.out.print("* ");
             }
-            System.out.print("* ");
+            System.out.println("");
         }
     }
 
