@@ -1,0 +1,11 @@
+insert into users (user_name,user_email,user_password,user_handphone,created_on)
+SELECT
+    INITCAP(customer_id) as user_name,
+    replace(lower(substring(contact_name,1,position(' ' in contact_name))),' ','')||'@gmail.com' as user_email,
+    crypt(lower(customer_id), gen_salt('bf', 12)) as user_password,
+    phone as user_phone,
+    now() as created_on
+FROM CUSTOMERS
+WHERE replace(lower(substring(contact_name,1,position(' ' in contact_name))),' ','')||'@gmail.com'
+NOT IN ('carlos@gmail.com','elizabeth@gmail.com','maria@gmail.com')
+ORDER BY user_email

@@ -1,0 +1,9 @@
+Notes Day-1:
+
+1. SERIAL generate squences
+
+Question :
+1. search_path?
+2. alter role
+3. Business recurment system
+4. ORM (Object Relational Mapping)
