@@ -5,6 +5,7 @@ import java.time.Year;
 
 public class Car extends Vehicle{
     public static int totalCar;
+    public static double totalIncomeCar;
 
     public Car(String registerNumber, VehicleType vehicleType, Year year, double price, double tax, int seat, LocalDate transactionDate) {
         super(registerNumber, vehicleType, year, price, tax, seat, transactionDate);

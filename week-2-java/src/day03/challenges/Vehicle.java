@@ -3,8 +3,11 @@ package day03.challenges;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.Year;
+import java.util.ArrayList;
 
 public class Vehicle{
+    public static ArrayList<Vehicle> allVehicle = new ArrayList<>();
+
     private String registerNumber;
     private VehicleType vehicleType;
     private Year year;
@@ -28,6 +31,7 @@ public class Vehicle{
         this.seat = seat;
         this.transactionDate = transactionDate;
         totalTax += tax;
+        allVehicle.add(this);
     }
 
     public String getRegisterNumber() {

@@ -15,6 +15,7 @@ public class Suv extends Car implements RentVehicle {
         this.rent = rent;
         this.driver = driver;
         totalIncome(rent+driver);
+        totalIncomeCar += getIncome();
     }
 
     public double getRent() {

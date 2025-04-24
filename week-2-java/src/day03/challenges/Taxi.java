@@ -14,6 +14,7 @@ public class Taxi extends Car implements RentVehicle{
         this.order = order;
         this.orderPerKm = orderPerKm;
         setIncome(order * orderPerKm);
+        totalIncomeCar += getIncome();
     }
 
     public int getOrder() {
