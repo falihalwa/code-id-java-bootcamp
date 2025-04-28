@@ -3,7 +3,7 @@ package day03.challenges;
 import java.time.LocalDate;
 import java.time.Year;
 
-public class Taxi extends Car implements RentVehicle{
+public class Taxi extends Car implements Rentable {
     private int order;
     private double orderPerKm;
 

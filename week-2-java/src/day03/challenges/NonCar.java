@@ -3,7 +3,7 @@ package day03.challenges;
 import java.time.LocalDate;
 import java.time.Year;
 
-public class NonCar extends Vehicle implements RentVehicle{
+public class NonCar extends Vehicle implements Rentable{
     private double orderPerHours;
 
     public NonCar(String registerNumber, VehicleType vehicleType, Year year, double price, double tax, int seat, LocalDate transactionDate, double orderPerHours) {

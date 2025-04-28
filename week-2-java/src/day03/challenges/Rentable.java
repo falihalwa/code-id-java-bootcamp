@@ -1,5 +1,5 @@
 package day03.challenges;
 
-interface RentVehicle {
+interface Rentable {
     void totalIncome(double income);
 }

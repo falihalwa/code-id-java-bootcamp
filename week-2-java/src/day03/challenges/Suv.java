@@ -3,7 +3,7 @@ package day03.challenges;
 import java.time.LocalDate;
 import java.time.Year;
 
-public class Suv extends Car implements RentVehicle {
+public class Suv extends Car implements Rentable {
     private double rent;
     private double driver;
 
