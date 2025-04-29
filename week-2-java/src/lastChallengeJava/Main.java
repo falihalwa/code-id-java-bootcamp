@@ -17,6 +17,7 @@ public class Main {
 //        System.out.println();
 
         System.out.printf("%.2f\n", salaryServices.getTotalSalaryByType(listEmp, Status.MAGANG));
+        System.out.println(employee.getTotalEmployeeByType(listEmp, Status.MAGANG));
 
         System.out.println();
 

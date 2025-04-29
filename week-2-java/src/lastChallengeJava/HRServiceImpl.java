@@ -74,16 +74,14 @@ public class HRServiceImpl implements HRService{
 
     @Override
     public int getTotalEmployeeByType(List<Employee> emps, Status empType) {
-        if(empType == Status.PERMANENT){
-            return Permanent.totalEmployee;
+        int totalEmployee = 0;
+
+        for(Employee emp : emps){
+            if(emp.getStatus() == empType){
+                totalEmployee += 1;
+            }
         }
-        if (empType == Status.CONTRACT) {
-            return Contract.totalEmployee;
-        }
-        if (empType == Status.MAGANG) {
-            return Magang.totalEmployee;
-        } else {
-            return 0;
-        }
+
+        return totalEmployee;
     }
 }
